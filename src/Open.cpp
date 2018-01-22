@@ -3,4 +3,6 @@
 
 Open::Open(double capacity) : Wagon(capacity) {}
 
-void Open::load(Cargo* list) {}
+void Open::load(Cargo* list) {
+    this->performLoad(list->bulk);
+}

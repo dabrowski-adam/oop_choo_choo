@@ -2,7 +2,7 @@
 #define CHOO_CHOO_REFRIGERATED_HPP
 
 #include "Wagon.hpp"
-struct Cargo;
+#include "Cargo.hpp"
 
 class Refrigerated : public Wagon {
     public:

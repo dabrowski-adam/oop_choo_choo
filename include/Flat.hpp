@@ -2,7 +2,7 @@
 #define CHOO_CHOO_FLAT_HPP
 
 #include "Wagon.hpp"
-struct Cargo;
+#include "Cargo.hpp"
 
 class Flat : public Wagon {
     public:

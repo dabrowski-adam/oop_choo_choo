@@ -2,7 +2,7 @@
 #define CHOO_CHOO_COVERED_HPP
 
 #include "Wagon.hpp"
-struct Cargo;
+#include "Cargo.hpp"
 
 class Covered : public Wagon {
     public:

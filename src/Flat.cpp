@@ -3,4 +3,6 @@
 
 Flat::Flat(double capacity) : Wagon(capacity) {}
 
-void Flat::load(Cargo* list) {}
+void Flat::load(Cargo* list) {
+    this->performLoad(list->units);
+}

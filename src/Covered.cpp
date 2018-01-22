@@ -3,4 +3,6 @@
 
 Covered::Covered(double capacity) : Wagon(capacity) {}
 
-void Covered::load(Cargo* list) {}
+void Covered::load(Cargo* list) {
+    this->performLoad(list->general);
+}

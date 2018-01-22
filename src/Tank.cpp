@@ -3,4 +3,6 @@
 
 Tank::Tank(double capacity) : Wagon(capacity) {}
 
-void Tank::load(Cargo* list) {}
+void Tank::load(Cargo* list) {
+    this->performLoad(list->liquids);
+}

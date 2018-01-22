@@ -3,4 +3,6 @@
 
 Refrigerated::Refrigerated(double capacity) : Wagon(capacity) {}
 
-void Refrigerated::load(Cargo* list) {}
+void Refrigerated::load(Cargo* list) {
+    this->performLoad(list->perishable);
+}

@@ -2,7 +2,7 @@
 #define CHOO_CHOO_OPEN_HPP
 
 #include "Wagon.hpp"
-struct Cargo;
+#include "Cargo.hpp"
 
 class Open : public Wagon {
     public:

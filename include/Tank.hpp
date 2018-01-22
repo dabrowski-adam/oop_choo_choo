@@ -2,7 +2,7 @@
 #define CHOO_CHOO_TANK_HPP
 
 #include "Wagon.hpp"
-struct Cargo;
+#include "Cargo.hpp"
 
 class Tank : public Wagon {
     public:
