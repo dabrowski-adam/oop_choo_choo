@@ -1,6 +1,7 @@
 #include "Train.hpp"
 #include "Wagon.hpp"
 #include <stdexcept>
+#include <numeric>
 
 Train::Train() : wagons() {}
 
@@ -26,6 +27,14 @@ unsigned int Train::numberOfWagons() {
     return this->wagons.size();
 }
 
-double Train::totalCapacity() {}
+double Train::totalCapacity() {
+    return std::accumulate(
+        this->wagons.begin(),
+        this->wagons.end(),
+        0,
+        [](double init, Wagon* el) -> double { 
+            return init + el->getCapacity();
+        });
+}
 
 void Train::loadWagons(Cargo* list) {}
