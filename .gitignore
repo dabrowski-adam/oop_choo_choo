@@ -1,0 +1,7 @@
+# Tool config
+.vscode/
+/compile_commands.json
+
+# Build results
+**/build
+
