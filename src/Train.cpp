@@ -3,7 +3,11 @@
 
 Train::Train() : wagons() {}
 
-Train::~Train() {}
+Train::~Train() {
+    for (auto it = this->wagons.begin(); it != this->wagons.end(); ++it) {
+        delete (*it);
+    }
+}
 
 void Train::attachWagon(Wagon* wagon) {}
 
