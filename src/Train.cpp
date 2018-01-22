@@ -9,7 +9,9 @@ Train::~Train() {
     }
 }
 
-void Train::attachWagon(Wagon* wagon) {}
+void Train::attachWagon(Wagon* wagon) {
+    this->wagons.push_back(wagon);
+}
 
 Wagon* Train::getWagon(unsigned int n) {}
 
