@@ -15,7 +15,14 @@ set(CMAKE_VERBOSE_MAKEFILE TRUE)
 #Source files here
 set(SOURCE_FILES
         src/Template.cpp
-        src/main.cpp)
+        src/main.cpp
+        src/Wagon.cpp
+        src/Train.cpp
+        src/Covered.cpp
+        src/Flat.cpp
+        src/Open.cpp
+        src/Refrigerated.cpp
+        src/Tank.cpp)
 
 add_executable(Project ${SOURCE_FILES})
 
