@@ -22,8 +22,10 @@ Wagon* Train::getWagon(unsigned int n) {
     }
 }
 
-unsigned int numberOfWagons() {}
+unsigned int Train::numberOfWagons() {
+    return this->wagons.size();
+}
 
-double totalCapacity() {}
+double Train::totalCapacity() {}
 
-void loadWagons(Cargo* list) {}
+void Train::loadWagons(Cargo* list) {}
