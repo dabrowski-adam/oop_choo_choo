@@ -40,7 +40,13 @@ include_directories(
 set(SOURCE_TEST_FILES
         test/master.cpp
         test/TestTemplate.cpp
-        src/Template.cpp)
+        src/Template.cpp
+        test/TestChooChoo.cpp
+        src/Train.cpp
+        src/Open.cpp
+        src/Tank.cpp
+        include/Cargo.hpp
+        src/Wagon.cpp)
 
 add_executable(TestProject ${SOURCE_TEST_FILES})
 

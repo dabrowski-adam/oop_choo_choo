@@ -38,8 +38,7 @@ double Train::totalCapacity() {
 }
 
 void Train::loadWagons(Cargo* list) {
-    for (auto it = this->wagons.begin(); 
-        it != this->wagons.end(); ++it) {
+    for (auto it = this->wagons.begin(); it != this->wagons.end(); ++it) {
         (*it)->load(list);
     }
 }
